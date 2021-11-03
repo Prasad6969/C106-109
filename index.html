@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Animal Voices Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://font.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+        <div id="header_div" class="col-lg-4 col-md-4 col-sm-8 col-xs-12 text-center">
+            <h2>Sound Controlled Animals</h2>
+            <p>Note: Play different sounds, such as barking, meowing, roaring or mooing.</p>
+        </div>
+         <div class="main_div">
+                <button class="btn btn-warning" onclick="recordaudio();">Start</button>
+                <h4 id="confidence"></h4>
+                <h3 id="detected_voice">Detected Voice is Of - </h3>
+                <br>
+                <img id="animal_name_image" src="listen.jfif">
+                <footer class="copy_right_footer"></footer>
+                <script src="main.js"></script>
+         </div>
+        </center>
+        </div>
+    </body>
+</html>
